@@ -124,12 +124,14 @@ int main()
 
 double getGradePoint(string grade)
 {
-    if (grade == "A+" || grade == "A")
+    if (grade == "A+")
         return 4.00;
-    else if (grade == "A-")
+    else if (grade == "A")
         return 3.75;
-    else if (grade == "B+")
+    else if (grade == "A-")
         return 3.50;
+    else if (grade == "B+")
+        return 3.25;
     else if (grade == "B")
         return 3.00;
     else if (grade == "B-")
@@ -137,13 +139,9 @@ double getGradePoint(string grade)
     else if (grade == "C+")
         return 2.50;
     else if (grade == "C")
-        return 2.00;
-    else if (grade == "C-")
-        return 1.75;
-    else if (grade == "D+")
-        return 1.50;
+        return 2.25;
     else if (grade == "D")
-        return 1.00;
+        return 2.00;
     else if (grade == "F")
         return 0.00;
     else
